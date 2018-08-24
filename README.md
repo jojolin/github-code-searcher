@@ -4,7 +4,7 @@
 - The original purpose is to index the code on github for search when you're coding.
 - I train the code words with gensim word2vec in order to find something instesting :) ,
 Below is some thing I have found, not much interesting! :( .
-- You can download the model I've train on [baiduyun](https://pan.baidu.com/s/1pcWFe7iN8BHTVZx-U8Btww)
+- You can download the model I've trained on [baiduyun](https://pan.baidu.com/s/1pcWFe7iN8BHTVZx-U8Btww)
 
 ```
 (nlp) jzlin@ubuntu1604:~/projects/github-code-searcher$ python evaluate.py simi model/w2v-crawler.model_1808240908 "music"

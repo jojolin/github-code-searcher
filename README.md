@@ -1,8 +1,10 @@
 # github code searcher
 - **search the code on github**
-- !! this is an working way project
-- the original purpose is to index the code on github for search when you're coding
-- I train the code words with gensim word2vec in order to find something instesting :) , some thing I have found, not much interesting! :( .
+- !! this is a working project.
+- the original purpose is to index the code on github for search when you're coding.
+- I train the code words with gensim word2vec in order to find something instesting :) ,
+below is some thing I have found, not much interesting! :( .
+- you can download the model I've train on [baiduyun]()
 
 ```
 (nlp) jzlin@ubuntu1604:~/projects/github-code-searcher$ python evaluate.py simi model/w2v-crawler.model_1808240908 "music"
@@ -70,22 +72,24 @@
 ('preload_options', 0.9123343825340271)
 ```
 
-## search codebases
-- e.g. search `crawler` with language `Python` 
-- `python codebase_se.py crawler Python 1`
+## code usage
+### search codebases
+  - e.g. search `crawler` with language `Python` 
+    - `python codebase_se.py crawler Python 1`
 
-## download codebases
-- `python codebase_dl.py urls/q_xx.txt`
+### download codebases
+  - `python codebase_dl.py urls/q_xx.txt`
 
-## find pyfiles
-- tree -afi projects | grep -F .py > pyfile.txt 
-- wc -l pyfile.txt
+### find pyfiles
+  - require `tree` installed on your system
+  - `tree -afi projects-xx | grep -F .py > pyfile/pyfile-xx.txt`
+  - `wc -l pyfile/pyfile-xx.txt`
 
-## sens.py
-- sed -n '1,100000p' pyfile.txt > pyfile100000.txt
-- cat pyfile100000.txt | python index.py
+### trans files to sens
+  - (use line 1-100000? :) ) `sed -n '1,100000p' pyfile/pyfile-xx.txt > pyfile100000.txt`
+  - `cat pyfile/pyfile-xx.txt | python index.py`
 
-## train
+### train
 - require packages:
   - gensim 
 
@@ -96,5 +100,5 @@
   - `python w2v.py train pyfile2sens/sens.txt model/w2v.model`
 
 - evaluate
-  - `python evaluate.py simi model/w2v-crawler.model_1808240908 "crawl"`
+  - `python evaluate.py simi model/w2v-crawler.model_1808240908 "music"`
 

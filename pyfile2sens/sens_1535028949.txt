@@ -1,0 +1,259 @@
+Given list lst number create new list
+that contains each number of the list at most times without reordering
+For example the input you take
+drop the next since this would lead to being the result times then take
+which leads to
+collections
+Time complexity
+delete_nth_naive array
+ans
+num array
+ans count num
+ans append num
+ans
+Time Complexity using hash tables
+delete_nth array
+result
+counts collections defaultdict int keep track of occurrences
+array
+counts
+result append
+counts
+result
+Implement Flatten Arrays
+Given an array that may contain nested arrays
+produce single resultant array
+collections Iterable
+list
+flatten input_arr output_arr
+output_arr
+output_arr
+ele input_arr
+isinstance ele Iterable
+flatten ele output_arr
+output_arr append ele
+output_arr
+returns iterator
+flatten_iter iterable
+Takes input multi dimensional iterable
+returns generator which produces one dimensional output
+element iterable
+isinstance element Iterable
+flatten_iter element
+element
+There parking lot only one empty spot Given the initial state
+of the parking lot the final state Each step we are only allowed to
+move car
+out of its place move it into the empty spot
+The goal to find out the least movement needed to rearrange
+the parking lot the initial state to the final state
+Say the initial state an array
+where are different cars the empty spot
+And the final state
+We can swap the initial array to get so on
+Each step swap only
+Edit
+Now also prints the sequence of changes states
+Output of this example
+initial
+final
+Steps
+Sequence
+garage initial final
+initial initial create copy to prevent changes original initial
+steps
+seq list of each step sequence
+initial final
+zero initial index
+zero final index
+car_to_move final zero
+pos initial index car_to_move
+initial zero initial pos initial pos initial zero
+range len initial
+initial final
+initial zero initial initial initial zero
+seq append initial
+steps
+steps seq
+delete_nth
+flatten
+garage
+josephus
+longest_non_repeat
+max_ones_index
+merge_intervals
+missing_ranges
+move_zeros
+plus_one
+rotate
+summarize_ranges
+three_sum
+trimmean
+top_
+two_sum
+limit
+n_sum
+There are people sitting circular fashion
+print every third member removing them
+the next counter starts immediately after the member removed
+Print till all the members are exhausted
+For example
+Input consider members sitting circular fashion
+Output
+josephus int_list skip
+skip skip list starts index
+idx
+len_list len int_list
+len_list
+idx skip idx len_list hash index to every rd
+int_list pop idx
+len_list
+Sometimes you need to limit array result to use Such you only need the value over
+you need value under than By use this algorithms you can limit your array
+to specific value
+If array Min Max value was given it returns array that contains values of given array
+which was larger than Min lower than Max You need to give unlimit to use only Min
+Max
+ex limit
+Complexity
+limit arr min_lim max_lim
+result
+min_lim
+arr
+max_lim
+result append
+max_lim
+arr
+min_lim
+result append
+arr
+min_lim max_lim
+result append
+result
+Given string find the length of the longest substring
+without repeating characters
+Examples
+Given abcabcbb the answer abc which the length
+Given bbbbb the answer the length of
+Given pwwkew the answer wke the length of
+Note that the answer must be substring
+pwke subsequence substring
+longest_non_repeat_v string
+Apply slide windown
+dict {}
+max_length
+range len string
+string dict
+max dict string
+dict string
+max_length max max_length
+max_length
+longest_non_repeat_v string
+Finds the length of the longest substring
+without repeating characters
+Uses alternative algorithm
+string
+start max_len
+used_char {}
+index char enumerate string
+char used_char start used_char char
+start used_char char
+max_len max max_len index start
+used_char char index
+max_len
+Find the index of to be replaced to get
+longest continuous sequence
+of binary array
+Returns index of to be
+replaced to get longest
+continuous sequence of
+If there no array then
+it returns
+let input array
+If we replace at index we get the longest continuous
+sequence of the array
+So the function
+max_ones_index arr
+len arr
+max_count
+max_index
+prev_zero
+prev_prev_zero
+curr range
+If current element
+then calculate the difference
+between curr prev_prev_zero
+arr curr
+curr prev_prev_zero max_count
+max_count curr prev_prev_zero
+max_index prev_zero
+prev_prev_zero prev_zero
+prev_zero curr
+prev_prev_zero max_count
+max_index prev_zero
+max_index
+Given collection of intervals merge all overlapping intervals
+Interval
+In mathematics real interval set of real
+numbers the property that any number that lies
+between two numbers the set also included the set
+__init__ start end
+start start
+end end
+__repr__
+Interval {} {} format start end
+__iter__
+iter range start end
+__getitem__ index
+index
+end index
+start index
+__len__
+end start
+__contains__ item
+start item end
+__eq__ other
+start other start end other end
+as_list
+Return interval list
+list
+@staticmethod
+merge intervals
+Merges two intervals into one
+out
+sorted intervals key start
+out start out end
+out end max out end end
+out
+out
+@staticmethod
+print_intervals intervals
+Prints out the intervals
+res
+intervals
+res append repr
+print join res
+merge_intervals intervals
+Merges intervals the form of list
+intervals
+intervals sort key
+out intervals pop
+intervals
+out
+out max out
+out append
+out
+Find missing ranges between low high the given array
+Ex lo hi answer
+missing_ranges arr lo hi
+res
+start lo
+arr
+start
+start
+start
+res append start
+start
+start hi
+res append start hi
+res
